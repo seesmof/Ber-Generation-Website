@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa";
 const Navbar = () => {
   return (
     <>
-      <nav className="flex flex-row justify-between px-4 py-3 bg-background">
+      <nav className="flex flex-row sticky top-0 z-50 justify-between px-4 py-3 bg-background">
         <div>
           <img src={Logo} alt="Logo image" className="h-10 w-10 scale-110" />
         </div>

@@ -21,7 +21,7 @@ const Create = () => {
               className="w-full h-full object-cover absolute top-0 left-0"
             />
 
-            <h3 className="text-white z-50 self-end text-xl font-extrabold">
+            <h3 className="text-white z-10 self-end text-xl font-extrabold">
               Generate new artwork ✨
             </h3>
           </div>
