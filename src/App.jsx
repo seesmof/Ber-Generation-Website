@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Create from "./components/Create";
+import Recent from "./components/Recent";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Navbar />
         <div className="flex flex-col py-6">
           <Create />
+          <Recent />
         </div>
       </main>
     </>

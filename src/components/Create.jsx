@@ -1,6 +1,5 @@
 import React from "react";
 import GenerateNew from "../assets/generate_new.png";
-import { BsArrowUpRight } from "react-icons/bs";
 import { FiArrowUpRight } from "react-icons/fi";
 
 const Create = () => {
@@ -15,7 +14,7 @@ const Create = () => {
         </div>
 
         <div className="grid grid-cols-2 mt-6 gap-5">
-          <div className="col-span-1 flex w-full bg-blue-500 relative p-4 rounded-2xl overflow-hidden aspect-square">
+          <div className="col-span-1 flex w-full relative p-4 rounded-2xl overflow-hidden aspect-square">
             <img
               src={GenerateNew}
               alt=""
