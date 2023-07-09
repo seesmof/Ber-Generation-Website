@@ -21,8 +21,11 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex flex-row sticky top-0 z-50 justify-between px-4 py-3 bg-background">
-        <div>
+        <div className="flex flex-row items-center">
           <img src={Logo} alt="Logo image" className="h-10 w-10 scale-110" />
+          <span className="font-extrabold text-3xl ml-2">
+            Ber<span className="text-gray-500 ml-1">AI</span>
+          </span>
         </div>
         <div className="flex flex-row">
           <button className="rounded-full border-purple-700 border-2 group mr-2">
