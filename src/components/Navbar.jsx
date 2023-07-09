@@ -20,13 +20,22 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex flex-row sticky top-0 z-50 justify-between px-4 py-3 bg-background">
+      <nav className="flex flex-row sticky top-0 z-50 justify-between px-4 py-3 md:py-4 bg-background">
         <div className="flex flex-row items-center">
           <img src={Logo} alt="Logo image" className="h-10 w-10 scale-110" />
           <span className="font-extrabold text-3xl ml-2">
             Ber<span className="text-gray-500 ml-1">AI</span>
           </span>
         </div>
+
+        <div className="flex-row hidden md:flex rounded-xl border-gray-200 border-2 p-2 font-medium text-gray-500 gap-4 absolute right-1/3 top-3">
+          <button className="tracking-tight px-4 bg-black rounded-xl text-white p-2">
+            Dashboard
+          </button>
+          <button className="tracking-tight">Discover Arts</button>
+          <button className="tracking-tight pr-4">Connect</button>
+        </div>
+
         <div className="flex flex-row">
           <button className="rounded-full border-purple-700 border-2 group mr-2">
             <img
@@ -41,7 +50,7 @@ const Navbar = () => {
           </button>
 
           <button
-            className="hover:bg-gray-200 rounded-xl p-2 ml-2"
+            className="hover:bg-gray-200 rounded-xl p-2 ml-2 md:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             {!isOpen ? (
