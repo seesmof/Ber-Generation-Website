@@ -51,11 +51,15 @@ const Create = () => {
     <>
       <div className="flex flex-col p-4">
         <div className="flex flex-col">
-          <h2 className="font-extrabold text-3xl">Your recent projects</h2>
-          <p className="pt-1 text-gray-700">Continue where you left off </p>
+          <h2 className="font-extrabold text-3xl md:text-4xl">
+            Your recent projects
+          </h2>
+          <p className="pt-1 md:pt-2 md:text-lg text-gray-500">
+            Continue where you left off{" "}
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 mt-6 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 mt-6 gap-5">
           {InfoCards.map((card, index) => (
             <InfoCard
               key={index}
